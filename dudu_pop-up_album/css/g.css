@@ -1,0 +1,131 @@
+﻿img {
+	border: none;
+}
+.dudu_album_shade{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background: url(../image/dudu_shade_bg.png) repeat 0 0;
+}
+.dudu_album_frame{
+	margin: 50px auto 0;
+	z-index: 60;
+	background: #FFF;
+}
+
+.dudu_album_big_img_frame{
+	width: 100%;
+	position: relative;
+	background: #000;
+	overflow: hidden;
+}
+
+.dudu_album_big_img_arrow{
+	position: absolute;
+	width:100px;
+	height: 100%;
+	z-index: 1000;
+	background: url(../image/dudu_transparency_bg) repeat 0 0;
+}
+
+.dudu_album_big_img_arrow img{
+	position: relative;
+	display: none;
+	cursor: pointer;
+	z-index: 1001;
+}
+
+#dudu_album_big_img_left_arrow{
+	left: 0;
+}
+
+#dudu_album_big_img_right_arrow{
+	right: 0;
+}
+
+.dudu_big_img_a{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	text-align: center;
+	z-index: -1;
+}
+.dudu_current_show{
+	display:block!important;
+	z-index:300!important;
+}
+.dudu_next_show{
+	z-index:200!important;
+	display: block!important;
+}
+.dudu_big_img_a img{
+	height: 100%;
+}
+
+.dudu_album_close_button{
+	display: block;
+	position: absolute;
+	top :10px;
+	right: 10px;
+	width:36px;
+	height: 36px;
+	z-index: 100;
+	background: url(../image/dudu_album_close.png) no-repeat 0 0;
+}
+
+.dudu_album_close_button:hover{
+	background: url(../image/dudu_album_close.png) no-repeat 0 0;
+}
+
+
+/**
+ * 小图框样式
+ */
+.dudu_album_small_img_frame{
+	width: 100%;
+	position: relative;
+}
+
+.dudu_album_small_img_arrow{
+	position: relative;
+	float: left;
+	width: 40px;
+	height: 100%;
+	background: #6B6B6B;
+	text-align: center;
+	display: block;
+}
+
+.dudu_album_small_img_arrow img{
+	position: relative;
+	cursor: pointer;
+}
+
+.dudu_album_small_show_frame{
+	float: left;
+	overflow: hidden;
+}
+
+.dudu_album_small_list_ul{
+	margin: 0;
+	padding: 0;
+}
+
+.dudu_album_small_list_ul li{
+	border:2px solid #FFF;
+	margin:4px;
+	list-style-type:none;
+	float: left;
+}
+
+.dudu_album_small_list_li_hover, .dudu_album_small_list_li_current{
+	border:2px solid #6B6B6B!important;
+}
+.dudu_album_small_list_ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
